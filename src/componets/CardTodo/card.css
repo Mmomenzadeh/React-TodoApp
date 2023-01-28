@@ -1,0 +1,37 @@
+.cardTodo-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    align-items: center;
+}
+
+.todo-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-content h2 {
+    color: #f68e14;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.todo-content p{
+    color: #fff;
+    font-size: 11px;
+
+
+}
+
+.card-btn{
+    display: flex;
+    gap: 5px;
+
+}
+
+.btn-action{
+    border: none;
+    border-radius: 5px;
+    
+}
