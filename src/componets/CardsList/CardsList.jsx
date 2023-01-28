@@ -1,15 +1,16 @@
 import Card from "../CardTodo/Card";
 import "./cardsList.css";
 
-const CardsList = ({ TodoList }) => {
+const CardsList = ({ TodoList ,setTodoList }) => {
   return (
     <ul className="todoList-container">
       {TodoList.map((item) => {
+       
         return (
-            <div>
-            <Card key={item.id} TodoItem={item} />
+            <ul key={item.id}>
+            <Card  TodoItem={item} setTodoList={setTodoList} TodoList={TodoList} />
             <div className="line"></div>
-            </div>
+            </ul>
         )
       })}
     </ul>

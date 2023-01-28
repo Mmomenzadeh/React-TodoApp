@@ -7,6 +7,7 @@ const Form = ({ TodoList, setTodoList }) => {
     title: "",
     describe: "",
     id: "",
+    done: false,
   };
   const [formValue, setFormValue] = useState(initialFormValue);
 
@@ -16,34 +17,35 @@ const Form = ({ TodoList, setTodoList }) => {
       title: formValue.title,
       describe: formValue.describe,
       id: uuidv4(),
+      done: false,
     };
     setTodoList([...TodoList, newTodo]);
-   
   };
 
   return (
     <form className="form-container" onSubmit={CreateTodoHandler}>
-      
-     <div className="input-container">
-     <div className="input-form">
-      <label> Title</label>
-      <input
-        type="text"
-        placeholder="Title"
-        onChange={(e) => setFormValue({ ...formValue, title: e.target.value })}
-      />
+      <div className="input-container">
+        <div className="input-form">
+          <label> Title</label>
+          <input
+            type="text"
+            placeholder="Title"
+            onChange={(e) =>
+              setFormValue({ ...formValue, title: e.target.value })
+            }
+          />
+        </div>
+        <div className="input-form">
+          <label>Describe</label>
+          <input
+            type="text"
+            placeholder="Describe"
+            onChange={(e) =>
+              setFormValue({ ...formValue, describe: e.target.value })
+            }
+          />
+        </div>
       </div>
-      <div className="input-form">
-      <label>Describe</label>
-      <input
-        type="text"
-        placeholder="Describe"
-        onChange={(e) =>
-          setFormValue({ ...formValue, describe: e.target.value })
-        }
-      />
-      </div>
-     </div>
       <button className="btn-form">Submit</button>
     </form>
   );

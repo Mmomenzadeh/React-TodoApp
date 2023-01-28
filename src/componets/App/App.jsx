@@ -5,12 +5,14 @@ import "./App.css";
 
 const App = () => {
   const [TodoList, setTodoList] = useState([]);
-  
+
+
+
   return (
     <div className="container">
-        <h1>My Todo </h1>
-      <Form  TodoList={TodoList} setTodoList={setTodoList} />
-      <CardsList TodoList={TodoList} />
+      <h1>My Todo </h1>
+      <Form TodoList={TodoList} setTodoList={setTodoList} />
+      <CardsList TodoList={TodoList}  setTodoList={setTodoList}  />
     </div>
   );
 };
