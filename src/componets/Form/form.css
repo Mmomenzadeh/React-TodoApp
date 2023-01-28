@@ -38,5 +38,18 @@
     border-radius: 20px;
     background-color: #f90;
     color: #fff;
-    
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-form:hover{
+    background-color: #f90;
+    width: 100px;
+    height:30px;
+    border: 1.5px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
 }

@@ -1,25 +1,28 @@
 .cardTodo-container{
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
-    align-items: center;
+    padding: 15px 5px;
+    align-items: flex-start;
 }
 
 .todo-content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 70%;
+    flex-wrap: wrap;
+    line-height: 1.3;
 }
 
 .todo-content h2 {
-    color: #f68e14;
-    font-size: larger;
+    color: #f6be14;
+    font-size: 23px;
     font-weight: bold;
 }
 
 .todo-content p{
     color: #fff;
-    font-size: 11px;
+    font-size: 15px;
 
 
 }
@@ -32,6 +35,23 @@
 
 .btn-action{
     border: none;
-    border-radius: 5px;
-    
+    border-radius: 15px;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+
+
+}
+
+.card-btn button:nth-child(1){
+    background-color: rgb(255,50,50);
+}
+
+.card-btn button:nth-child(2){
+    background-color: #fd4a60;
+}
+
+.card-btn button:nth-child(3){
+    background-color: rgb(2, 190, 146);
 }
